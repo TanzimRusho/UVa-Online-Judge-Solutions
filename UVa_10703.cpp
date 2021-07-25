@@ -50,42 +50,13 @@ int main()
                 }
             }        
         }
-        // debug start
-        /*
-        cout << endl;
         
-        for(k=0; k < N; ++k)
-        {
-            cout << X1[k] << " " <<  X2[k] << " " <<  
-                Y1[k] << " " << Y2[k] << endl;
-  
-                    
-        }
-        
-        
-        cout << endl;
-        
-        for(i=0; i < H; ++i)
-        {
-            for(j=0; j < W; ++j)
-                cout << A[i][j] << " ";
-        
-            cout << endl;
-        }
-
-        cout << endl;
-        
-        // debug end
-        */
         if (sum == W * H)
             cout << "There is no empty spots." << endl;
         else if (W*H - sum == 1)
             cout << "There is one empty spot." << endl;
         else
             cout << "There are " << W*H - sum << " empty spots." << endl;
-            
-        //cout << endl;
-        
     }
     
     return 0;
