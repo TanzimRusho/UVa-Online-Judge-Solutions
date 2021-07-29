@@ -87,7 +87,6 @@ int main()
             
             if (is_prime(i) == false && SieveOfEratosthenes(i) == true)
             {
-                //cout << "have i come here?" << " ";
                 ++count;
             }
         }   
