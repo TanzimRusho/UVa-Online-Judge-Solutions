@@ -5,7 +5,7 @@ int num;
 
 void four_primes(int array[], int elem, int n)
 {
-    int i, j, k, l;
+    int i, j, k, l, flag=0;
     
     for(i=0; i < elem; ++i)
         for(j=0; j < elem; ++j)
@@ -14,9 +14,12 @@ void four_primes(int array[], int elem, int n)
                 {
                     if(array[i] + array[j] + array[k] + array[l] == n)
                     {
+                        flag = 1;
                         goto label;
                     }
                 }
+    if(!flag)
+        printf("Impossible.\n");
     label:
     printf("%d %d %d %d\n", array[i],array[j],array[k],array[l]);
 }
